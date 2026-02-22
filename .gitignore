@@ -1,33 +1,33 @@
-# Binaries for programs and plugins
+# Binaries and build output
+out/
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
 
-# Test binary, built with `go test -c`
+# Go test binary
 *.test
 
-# Code coverage profiles and other test artifacts
+# Go coverage output
 *.out
-coverage.*
-*.coverprofile
-profile.cov
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Database files — never commit the actual database
+/storage/
 
-# Go workspace file
-go.work
-go.work.sum
+# Config files — comment this out if your config has NO secrets
+# /config/
 
-# env file
+# Environment files — these often contain secrets
 .env
+*.env
 
-# DB file
-storage
-/config
+# VS Code
+.vscode/
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# macOS
+.DS_Store
+
+# Editor swap files
+*.swp
+*.swo

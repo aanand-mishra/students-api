@@ -1,4 +1,20 @@
+# ─────────────────────────────────────────────────────────────
+# local.yaml — Development configuration
+#
+# For production, create a separate production.yaml and pass
+# its path via --config flag or CONFIG_PATH environment variable.
+# ─────────────────────────────────────────────────────────────
+
+# Which environment is running: "dev", "staging", or "prod"
+# This controls log format, log level, and other env-specific behaviour.
 env: "dev"
+
+# Path to the SQLite database file (relative to where you run the binary).
+# The storage/ folder is git-ignored so your DB never gets committed.
 storage_path: "storage/storage.db"
+
+# HTTP server settings
 http_server:
-  address: "localhost:8008"
+  # Address the server binds to. Format: "host:port"
+  # Use "0.0.0.0:8082" to accept connections from other machines.
+  address: "localhost:8082"
