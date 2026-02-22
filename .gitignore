@@ -26,6 +26,7 @@ go.work.sum
 
 # DB file
 storage
+/config
 
 # Editor/IDE
 # .idea/
